@@ -10,3 +10,5 @@
 1. Cliente RDP - https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients
 2. Cliente SSH - https://termius.com/
 3. Terraform   - https://www.terraform.io/downloads.html [Extrair e colocar em C:\Windows\system32 ou /usr/local/bin]
+
+A instalação do Terraform é só para quem quiser acompanhar o último exercício prático. Terraform será o tópico do próximo evento. Na eventualidade de não ter permissões para instalar em C:\Windows\system32 ou /usr/local/bin não há qualquer problema. Pode apenas guardar o ficheiro e serão fornecidadas instruções durante o evento.
