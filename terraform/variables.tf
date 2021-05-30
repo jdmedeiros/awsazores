@@ -20,7 +20,7 @@ variable "win_client_name" {
 
 variable "key_name" {
   type = string
-  default = "AWS-Educate-Azores-II"
+  default = "Sample-key-pair"
 }
 
 variable "volume_size" {
@@ -75,10 +75,10 @@ variable "fw_rules_win" {
   #                  |       |       |       |       |
   type = list(tuple([string, number, number, string, number]))
   default = [
-    ["tcp", 22, 22, "Allow SSH", 0],
+    ["tcp", 22, 22, "Allow SSH", 2],
     ["tcp", 80, 80, "Allow HTTP", 1],
     ["tcp", 443, 443, "Allow HTTPS", 1],
-    ["tcp", 3389, 3389, "Allow RDP", 1],
+    ["tcp", 3389, 3389, "Allow RDP", 2],
   ]
 }
 
@@ -88,5 +88,6 @@ variable "ip_list" {
   default = [
     ["128.65.243.205/32"],
     ["128.65.243.205/32", "10.0.0.0/8"],
+    ["0.0.0.0/0"],
   ]
 }
