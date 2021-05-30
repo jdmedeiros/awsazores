@@ -16,4 +16,6 @@ apt-get -o DPkg::Options::=--force-confdef upgrade
 apt-get -o DPkg::Options::=--force-confdef dist-upgrade
 apt-get -o DPkg::Options::=--force-confdef install -y apache2 php libapache2-mod-php
 
+timedatectl set-timezone Atlantic/Azores
+
 hostnamectl set-hostname "$HOSTNAME"

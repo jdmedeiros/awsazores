@@ -3,7 +3,7 @@
 USER=maria              # user to add or configure for - if adding an existing user, change the password manually
 PASSWORD=Passw0rd       # password in case we add the user
 DISPLAYMANAGER=lightdm  # lightdm or gdm3
-HOSTNAME=ubuntudsk      # hostname
+HOSTNAME=luxcli         # hostname
 SCRIPT_LOG_DETAIL=/var/log/client-config-detail.log
 
 exec 3>&1 4>&2
@@ -28,5 +28,7 @@ if ! (id "$USER" &>/dev/null); then
   sudo useradd -m -p "$(openssl passwd -1 $PASSWORD)" $USER
 fi
 runuser -l "$USER" -c 'echo xfce4-session > ~/.xsession'
+
+timedatectl set-timezone Atlantic/Azores
 
 hostnamectl set-hostname "$HOSTNAME"

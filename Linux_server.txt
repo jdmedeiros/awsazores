@@ -1,0 +1,7 @@
+1. timedatectl set-timezone Atlantic/Azores
+
+2. hostnamectl set-hostname luxcli
+
+3. sudo apt update
+
+4. sudo apt install -y apache2 php libapache2-mod-php

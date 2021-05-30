@@ -1,0 +1,17 @@
+1. timedatectl set-timezone Atlantic/Azores
+
+2. hostnamectl set-hostname luxcli
+
+3. sudo apt update
+
+4. sudo apt install -y xfce4 xfce4-goodies
+
+5. sudo apt install -y xrdp chromium-browser filezilla
+
+6. sudo adduser xrdp ssl-cert
+
+7. sudo adduser maria
+
+8. login maria
+
+9. echo xfce4-session > ~/.xsession

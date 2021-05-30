@@ -1,26 +1,26 @@
 variable "lux_server_name" {
   type = string
-  default = "LuxSrv"
+  default = "luxsrv"
 }
 
 variable "lux_client_name" {
   type = string
-  default = "LuxCli"
+  default = "luxcli"
 }
 
 variable "win_server_name" {
   type = string
-  default = "WinSrv"
+  default = "winsrv"
 }
 
 variable "win_client_name" {
   type = string
-  default = "WinCli"
+  default = "wincli"
 }
 
 variable "key_name" {
   type = string
-  default = "AWS-EDUCATE-II"
+  default = "AWS-Educate-Azores-II"
 }
 
 variable "volume_size" {
