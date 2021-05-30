@@ -5,3 +5,7 @@
 3. sudo apt update
 
 4. sudo apt install -y apache2 php libapache2-mod-php
+
+5. sudo wget -P /var/www/html https://raw.githubusercontent.com/jdmedeiros/awsazores/main/terraform/apache/index.html
+
+6. sudo wget -P /var/www/html https://raw.githubusercontent.com/jdmedeiros/awsazores/main/terraform/apache/info.php
