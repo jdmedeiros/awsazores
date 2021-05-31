@@ -19,10 +19,15 @@ resource "aws_route_table" "main_public" {
   }
 }
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 # Linux Network
 resource "aws_subnet" "lux_network" {
   vpc_id            = aws_vpc.enta_vpc.id
   cidr_block        = var.lux_cidr_block
+  availability_zone = data.aws_availability_zones.available.names[0]
 }
 
 # Route Table Assoc for Linux Network
@@ -35,6 +40,7 @@ resource "aws_route_table_association" "top" {
 resource "aws_subnet" "win_network" {
   vpc_id            = aws_vpc.enta_vpc.id
   cidr_block        = var.win_server_cidr_block
+  availability_zone = data.aws_availability_zones.available.names[1]
 }
 
 # Route Table Assoc for Windows Network
