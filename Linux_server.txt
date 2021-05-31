@@ -1,6 +1,6 @@
 1. sudo timedatectl set-timezone Atlantic/Azores
 
-2. sudo hostnamectl set-hostname luxcli
+2. sudo hostnamectl set-hostname luxsrv
 
 3. sudo apt update
 
